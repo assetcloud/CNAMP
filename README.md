@@ -3,6 +3,9 @@
 
 [![Build Status](https://travis-ci.org/tiangolo/full-stack-fastapi-postgresql.svg?branch=master)](https://travis-ci.org/tiangolo/full-stack-fastapi-postgresql)
 
+Full Stack FastAPI and PostgreSQL - Base Project Generator
+
+
 Generate a backend and frontend stack using Python, including interactive API documentation.
 
 技术栈：
@@ -34,11 +37,15 @@ ORM SQLAlchemy,
 
 ## Features
 
-* Full **Docker** integration (Docker based).
-* Docker Swarm Mode deployment.
-* **Docker Compose** integration and optimization for local development
+* Full Kubernetes integration (Docker based)
+*完全kubernetes集成。
+* Helm Mode deployment.
+
 * **Production ready** Python web server using Uvicorn and Gunicorn.
+* **生产可用** Python web 服务器使用Uvicorn and Gunicorn.
+
 * Python **[FastAPI](https://github.com/tiangolo/fastapi)** backend:
+* Python **[FastAPI](https://github.com/tiangolo/fastapi)** 后端:
     * **Fast**: Very high performance, on par with **NodeJS** and **Go** (thanks to Starlette and Pydantic).
     * **Intuitive**: Great editor support. <abbr title="also known as auto-complete, autocompletion, IntelliSense">Completion</abbr> everywhere. Less time debugging.
     * **Easy**: Designed to be easy to use and learn. Less time reading docs.
@@ -77,6 +84,7 @@ ORM SQLAlchemy,
 * GitLab **CI** (continuous integration), including frontend and backend testing.
 
 ## How to use it
+## 如何使用
 
 Go to the directory where you want to create your project and run:
 
@@ -140,12 +148,14 @@ The input variables, with their default values (some auto generated) are:
 * `docker_image_frontend`: Docker image for the frontend. By default, based on your Docker image prefix.
 
 ## How to deploy
+## 如何部署
 
 This stack can be adjusted and used with several deployment options that are compatible with Docker Compose, but it is designed to be used in a cluster controlled with pure Docker in Swarm Mode with a Traefik main load balancer proxy handling automatic HTTPS certificates, using the ideas from <a href="https://dockerswarm.rocks" target="_blank">DockerSwarm.rocks</a>.
 
 Please refer to <a href="https://dockerswarm.rocks" target="_blank">DockerSwarm.rocks</a> to see how to deploy such a cluster in 20 minutes.
 
 ## More details
+## 更多详情
 
 After using this generator, your new project (the directory created) will contain an extensive `README.md` with instructions for development, deployment, etc. You can pre-read [the project `README.md` template here too](./{{cookiecutter.project_slug}}/README.md).
 
